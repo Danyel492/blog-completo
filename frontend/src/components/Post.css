@@ -1,0 +1,33 @@
+.post {
+    background-color: var(--cinza-medio);
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--cinza-claro);
+    padding-bottom: 1.5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    white-space: pre-wrap;
+}
+
+.post h2 {
+    font-weight: 500;
+    margin: 1rem 1rem 0;
+}
+
+.author {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.post p {
+    margin-top: 1rem;
+    text-align: justify;
+}
+.date {
+    display: block;
+    font-size: .8rem;
+    text-decoration: underline;
+    text-align: right;
+    margin: 1rem 0 0;
+}

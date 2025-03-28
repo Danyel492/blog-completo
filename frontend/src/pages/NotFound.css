@@ -1,0 +1,13 @@
+.not-found {
+    background-color: var(--cinza-medio);
+    max-width: 30rem;
+    margin: auto;
+    height: 10rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--laranja);
+}

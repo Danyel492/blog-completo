@@ -1,0 +1,50 @@
+.createPostContainer {
+    position: fixed;
+    background-color: #0000008c;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.createPostContainer form {
+    max-width: 50rem;
+    background-color: var(--cinza-medio);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px #000000a1;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    margin: auto;
+}
+
+.titleContainer, .contentContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    color: var(--branco);
+    background-color: var(--verde-medio);
+    border: transparent;
+}
+
+form button:hover {
+    background-color: var(--verde-escuro);
+}
+
+.btnContainer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.aviso-bloqueio {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,9 @@
+.footer {
+    height: 2rem;
+}
+
+footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}

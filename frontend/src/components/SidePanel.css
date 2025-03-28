@@ -1,0 +1,31 @@
+.userContainer, .side-panel {
+    background-color: var(--cinza-medio);
+    margin: 1rem;
+}
+
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    color: var(--verde-medio);
+    text-decoration: none;
+    font-weight: 900;
+}
+aside a:hover {
+    text-decoration: underline;
+}
+
+.wellcome span {
+    color: var(--verde-claro);
+}
+
+.wellcome {
+    border-bottom: 1px solid var(--cinza-escuro);
+    padding-bottom: 1rem;
+    
+}
+

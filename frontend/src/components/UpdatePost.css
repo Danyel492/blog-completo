@@ -1,0 +1,36 @@
+.updatePostContainer {
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.updatePostContainer form {
+    max-width: 50rem;
+    background-color: var(--cinza-medio);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px #000000a1;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    margin: auto;
+}
+
+.titleContainer, .contentContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    color: var(--branco);
+    background-color: var(--verde-medio);
+    border: transparent;
+}
+
+form button:hover {
+    background-color: var(--verde-escuro);
+}

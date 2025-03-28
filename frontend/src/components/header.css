@@ -1,0 +1,29 @@
+header {
+    background-color: var(--cinza-medio);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cinza-claro);
+    box-shadow: 5px 5px 5px #00000042;
+    margin-bottom: 1rem;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1490px;
+}
+
+.headerContainer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header img {
+    width: 3rem;
+}
+

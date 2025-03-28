@@ -1,0 +1,122 @@
+/* Estilixação Geral padrão */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--branco);
+}
+
+:root {
+    --preto:        #121312;
+    --cinza-escuro: #0c132d;
+    --cinza-medio:  #2a2e39;
+    --cinza-claro:  #979797;
+    --branco:       #f1f1f1;
+    --verde-escuro: #5d8829;
+    --verde-medio:  #8ab63b;
+    --verde-claro:  #c4cf00;
+    --laranja:      #ff6600;
+    --amarelo:      #ffa500;
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body {
+    background-color: var(--cinza-escuro);
+}
+
+body, textarea, input, button {
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+button {
+    background-color: transparent;
+    color: var(--verde-escuro);
+    padding: .8rem 1rem;
+    border-radius: .5rem;
+    border: 2px solid var(--verde-escuro);
+    font-weight: 900;
+    font-size: 1rem;
+    box-shadow: 2px 2px 5px #00000056;
+}
+
+button:hover {
+    color: var(--branco);
+    background-color: var(--verde-escuro);
+    cursor: pointer;
+}
+
+.btn-danger {
+    background-color: var(--amarelo);
+    border: 2px solid var(--amarelo);
+    color: var(--branco);
+}
+
+.btn-danger:hover {
+    border: 2px solid var(--laranja);
+    background-color: var(--laranja);
+}
+
+input {
+    background-color: var(--cinza-escuro);
+    border-radius: .5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem;
+
+}
+
+input:focus {
+    outline: 2px solid var(--verde-escuro);
+}
+textarea:focus {
+    outline: 2px solid var(--verde-escuro);
+}
+
+footer {
+   background-color: var(--cinza-medio);
+}
+textarea {
+    background-color: var(--cinza-escuro);
+    border-radius: .5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem;
+    height: 20rem;
+    line-height: 1.3rem;
+    
+}
+
+dialog {
+    display: flex;
+    flex-direction: column;
+    color: var(--laranja);
+    background-color: var(--cinza-medio);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: auto;
+    box-shadow: 0 0 8rem 5rem var(--preto);
+}
+
+dialog p {
+    margin-bottom: 1rem;
+}
+
