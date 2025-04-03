@@ -2,8 +2,10 @@ import mongoose from "mongoose";
 
 export const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/blog-xgrow-tallents', {
-
+        const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/blog-completo';
+        await mongoose.connect(mongoURI, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
         });
         console.log('Conexão com o MongoDB estabelecida.');
     } catch (error) {
