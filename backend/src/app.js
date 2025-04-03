@@ -3,6 +3,8 @@ import cors from 'cors';
 import { userRouter } from './routes/userRouter.js';
 import { postRouter } from './routes/postRouter.js';
 import { connectDB } from './configs/database.js';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
 

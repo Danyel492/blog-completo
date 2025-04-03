@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = 'http://fantastic-cooperation-production.up.railway.app:3000';
 
 // Função para autenticar o usuário
 export const authenticateUser = async (userData) => {
