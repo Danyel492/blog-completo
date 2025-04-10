@@ -1,8 +1,8 @@
-# Blog Completo
+# Sistema de Gerenciamento de Conteúdo (CMS+)
 
 ## Descrição do Projeto
 
-Sistema completo de Blog (frontend e banckend). Trata-se de um blog onde os usuários podem criar, editar, visualizar e deletar postagens, além de várias funções extras para o administrador. O back-end da aplicação é construído utilizando, principalmente, Node.js, Express e Mongodb. Já o front-end foi feito em React.js e Vite.
+Sistema completo de gerenciamento de conteúdo (frontend e banckend). Trata-se de um sistema onde os usuários podem criar, editar, visualizar e deletar postagens, além de várias funções extras para o administrador. O back-end da aplicação é construído utilizando, principalmente, Node.js, Express e Mongodb. Já o front-end foi feito em React.js e Vite.
 
 > [!WARNING]
 > É de extrema importância que o Guia Rápido seja executado corretamente antes da execução do projeto completo 
@@ -106,7 +106,7 @@ _|Essa é a mensagem que deve aparecer no terminal após o início do servidor f
 Caso a porta esteja sendo usada, irá exibir a próxima porta disponível.
 
 > [!NOTE]
-> A partir desse momento, caso queira, pode pular para [Exemplos Práticos](#exemplos-práticos) e começar a utilizar o blog.
+> A partir desse momento, caso queira, pode pular para [Exemplos Práticos](#exemplos-práticos) e começar a utilizar o sistema.
 
 [Voltar ao Índice](#índice)
 # Back-end
@@ -355,7 +355,7 @@ Atualiza todos os dados da postagem com o ID especificado. Substitua "{postId} "
 
 # Front-end
 
-O front-end deste projeto é uma aplicação web desenvolvida utilizando ``React``, que oferece uma interface de usuário interativa e responsiva para um blog. A aplicação é composta por vários componentes e páginas que permitem aos usuários criar, visualizar, atualizar e excluir postagens, além de gerenciar usuários (para administradores).
+O front-end deste projeto é uma aplicação web desenvolvida utilizando ``React``, que oferece uma interface de usuário interativa e responsiva. A aplicação é composta por vários componentes e páginas que permitem aos usuários criar, visualizar, atualizar e excluir postagens, além de gerenciar usuários (para administradores).
 
 [Voltar ao Índice](#índice)
 ### Principais Componentes e Páginas
@@ -428,8 +428,8 @@ Inclui a funcionalidade de ativar/desativar usuários.
 ### <ins>Home</ins>
 
 
-O blog já começa diretamente na página principal. Assim como a maioria dos blogs, todos podem acessar as postagens feitas por outros usuários. Mas só poderá fazer alguma postagem caso tenha um cadastro válido e esteja logado.
-<img src="./prints/00.png"> _|Pagina inicial do Blog_
+O sistema já começa diretamente na página principal. Todos podem acessar as postagens feitas por outros usuários. Mas só poderá fazer alguma postagem caso tenha um cadastro válido e esteja logado.
+<img src="./prints/00.png"> _|Pagina inicial do sistema_
 
 
 >No aside na direita pode encontrar os links para realizar o cadastro e login
@@ -477,7 +477,7 @@ Como administrador, você terá acesso a todas as postagens feitas por todos os 
 
 <img src="./prints/07.png"> _|Painel de controle (Logado como administrador)_
 
- - A postagem excluída é eliminada do banco de dados e não vai mais poder ser visualizada no blog
+ - A postagem excluída é eliminada do banco de dados e não vai mais poder ser visualizada no sistema
  - A postagem editada te dá a opção de mudar tanto Título quando conteúdo da postagem
  - Desativar a postagem mantem a postagem no banco de dados, o usuário continuará vendo a própria postagem no seu painel de controle, mas não é possível ver na página principal para os outros usuários.
 
@@ -488,7 +488,7 @@ Ainda no painel de controle do administrador, do lado direito, estão todos os u
 No painel de controle do usuário que teve a mensagem desativada, vai aparecer um aviso na mensagem desativada informando isso. (use o usuário PauloGym para ver um exemplo de postagem bloqueada)
 <img src="./prints/14.png"> _|Mensagem ofensiva que foi bloqueada pelo administrador_
 
-Já os usuários que tem sua conta desativada, ainda pode visualizar todas as postagens feitas no blog normalmente. Mas fica impossibilitado de fazer novas postagens. A imagem abaixo mostra um exemplo de um usuário desativado tentando fazer uma nova postagem (Entre no perfil do `TroladorMaster` para ver um exemplo de perfil desativado)
+Já os usuários que tem sua conta desativada, ainda pode visualizar todas as postagens feitas no sistema normalmente. Mas fica impossibilitado de fazer novas postagens. A imagem abaixo mostra um exemplo de um usuário desativado tentando fazer uma nova postagem (Entre no perfil do `TroladorMaster` para ver um exemplo de perfil desativado)
 
 <img src="./prints/09.png"> _|Aviso para usuário desativado_
 
@@ -540,7 +540,7 @@ Para atualizações futuras pretendo implementar funcionalidades extras, fora do
  
 4. Escolher Avatar
 
- - Grandes empresas como Disney, Netflix, Max, possuem um campo de perfil de usuário que ao invés de permitir que enviem suas próprias fotos, possa escolher dentre algumas opções um avatar para ficar em seu perfil. Isso permite um controle maior do que é exibido no blog, além de economizar em espaço de armazenamento.
+ - Grandes empresas como Disney, Netflix, Max, possuem um campo de perfil de usuário que ao invés de permitir que enviem suas próprias fotos, possa escolher dentre algumas opções um avatar para ficar em seu perfil. Isso permite um controle maior do que é exibido no sistema, além de economizar em espaço de armazenamento.
  
 5. Comentários nas postagens
 
@@ -569,7 +569,7 @@ Para atualizações futuras pretendo implementar funcionalidades extras, fora do
 [Voltar ao Índice](#índice)
 ## Conclusão
 
-Este projeto de blog representa um esforço significativo na aplicação de conceitos e tecnologias de back-end e frontend. Ao longo do desenvolvimento, foram exploradas diversas funcionalidades, desde a criação e gestão de postagens até a implementação de um sistema de controle de acesso robusto, com diferentes níveis de permissão para usuários e administradores.
+Este projeto representa um esforço significativo na aplicação de conceitos e tecnologias de back-end e frontend. Ao longo do desenvolvimento, foram exploradas diversas funcionalidades, desde a criação e gestão de postagens até a implementação de um sistema de controle de acesso robusto, com diferentes níveis de permissão para usuários e administradores.
 
 A experiência de construção deste projeto permitiu a aplicação de conhecimentos em Node.js, Express e Mongodb, além de aprimorar habilidades em desenvolvimento frontend e design responsivo. A implementação de funcionalidades como cadastro e login de usuários, criação, edição e exclusão de postagens, painel de controle para administração e moderação de conteúdo, e a preocupação com a responsividade para dispositivos móveis, demonstram um entendimento abrangente do ciclo de desenvolvimento de aplicações web.
 
